@@ -194,7 +194,6 @@ document.addEventListener('DOMContentLoaded', function() {
         testimonialInterval = setInterval(nextTestimonial, 6000);
     });
 });
-// Add this to your existing script.js
 document.addEventListener('DOMContentLoaded', function() {
     // FAQ accordion functionality
     const faqItems = document.querySelectorAll('.faq-item');
@@ -214,4 +213,34 @@ document.addEventListener('DOMContentLoaded', function() {
             item.classList.toggle('active');
         });
     });
+});
+
+// Mobile Menu Toggle Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileOverlay = document.querySelector('.mobile-menu-overlay');
+    const body = document.body;
+    
+    mobileMenuBtn.addEventListener('click', function() {
+        this.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        mobileOverlay.classList.toggle('active');
+        body.classList.toggle('menu-open');
+    });
+    
+    // Close menu when clicking overlay or links
+    mobileOverlay.addEventListener('click', closeMenu);
+    
+    const mobileLinks = document.querySelectorAll('.mobile-menu a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+    
+    function closeMenu() {
+        mobileMenuBtn.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        mobileOverlay.classList.remove('active');
+        body.classList.remove('menu-open');
+    }
 });

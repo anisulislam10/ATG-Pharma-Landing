@@ -14,29 +14,38 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
-<a href="#" class="logo">
-  <!-- Image logo -->
-  <img src="assets/images/logo/atg-logo.png" srcset="assets/images/logo/atg-logo@2x.png 2x" 
-       alt="ATG PHARMA" loading="lazy" class="logo-img">
-  <!-- Fallback text logo -->
-</a>  
-          <nav class="nav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact" class="btn-contact">Contact</a></li>
-                </ul>
-                <button class="mobile-menu-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
-        </div>
-    </header>
+    <div class="container">
+        <a href="#" class="logo"><img src="assets/images/logo/atg-logo.png" srcset="assets/images/logo/atg-logo@2x.png 2x" 
+                 alt="ATG PHARMA" loading="lazy" class="logo-img">
+        </a>  
+        <nav class="nav">
+            <ul class="desktop-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact" class="btn-contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<!-- Mobile Menu (add this right before </body>) -->
+<div class="mobile-menu-overlay"></div>
+<nav class="mobile-menu">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact" class="btn-contact">Contact</a></li>
+    </ul>
+</nav>
 
     <main>
 <section id="home" class="hero">

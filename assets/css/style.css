@@ -225,8 +225,9 @@ ul {
 }
 
 .btn-contact:hover {
-    background-color: var(--primary-dark);
+    background-color: white;
     transform: translateY(-2px);
+    
 }
 
 .mobile-menu-btn {
@@ -776,6 +777,162 @@ ul {
     .bg-circle-1,
     .bg-circle-2 {
         display: none; /* Hide background circles on mobile */
+    }
+}
+
+/* Mobile Menu Styles */
+/* Mobile Menu Styles */
+.mobile-menu-btn {
+    display: none; /* Hidden by default on desktop */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.mobile-menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Menu Panel */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: var(--white);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding: 80px 30px 30px;
+}
+
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobile-menu a {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    padding: 10px 0;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+    color: var(--primary-color);
+}
+
+/* Active States */
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-menu-btn.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Tablet and Mobile Responsive Styles */
+@media (max-width: 992px) {
+    /* Hide desktop nav on tablet/mobile */
+    .desktop-menu {
+        display: none;
+    }
+    
+    /* Show burger button */
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    /* Prevent body scrolling when menu is open */
+    body.menu-open {
+        overflow: hidden;
+    }
+}
+
+/* Additional Mobile Optimizations */
+@media (max-width: 576px) {
+    .mobile-menu {
+        width: 85%;
+        padding: 70px 20px 20px;
+    }
+    
+    .mobile-menu a {
+        font-size: 1rem;
+    }
+    
+    .btn-contact {
+        display: inline-block; /* Ensure contact button appears in mobile menu */
+    }
+}
+/* Tablet and Mobile Responsive Styles */
+@media (max-width: 992px) {
+    /* Hide desktop nav on tablet/mobile */
+    .nav ul {
+        display: none;
+    }
+    
+    /* Show burger button */
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    /* Adjust header padding */
+    .header {
+        padding: 10px 0;
+    }
+    
+    /* Prevent body scrolling when menu is open */
+    body.menu-open {
+        overflow: hidden;
+    }
+}
+
+/* Additional Mobile Optimizations */
+@media (max-width: 576px) {
+    .mobile-nav {
+        width: 85%;
+        padding: 70px 20px 20px;
+    }
+    
+    .mobile-nav a {
+        font-size: 1rem;
     }
 }
 /* About Section - Modern Animated Version */
