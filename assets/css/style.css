@@ -197,7 +197,7 @@ ul {
 }
 
 .nav ul li a:hover {
-    color: var(--primary-color);
+    color: white;
 }
 
 .nav ul li a::after {
