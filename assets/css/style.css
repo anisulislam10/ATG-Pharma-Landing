@@ -143,17 +143,8 @@ ul {
     transition: opacity 0.3s ease;
 }
 
-.logo-text {
-    font-size: 1.8rem;
-    font-weight: 700;
-    font-family: var(--font-graphik);
-    color: var(--text-color);
-    display: none; /* Hidden by default, shows if image fails */
-}
 
-.logo-text span {
-    color: var(--primary-color);
-}
+
 
 /* Fallback if image doesn't load */
 .logo-img:not([src]) {
