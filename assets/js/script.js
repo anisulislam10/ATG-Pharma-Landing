@@ -214,32 +214,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const mobileMenu = document.querySelector('.mobile-menu');
     const mobileOverlay = document.querySelector('.mobile-menu-overlay');
-    const closeIcon = document.querySelector('.close-icon'); // Add this
+    const closeIcon = document.querySelector('.close-icon');
     const body = document.body;
 
-    // Toggle menu open/close
-    mobileMenuBtn.addEventListener('click', function() {
-        this.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
-        mobileOverlay.classList.toggle('active');
-        body.classList.toggle('menu-open');
-    });
-
-    // Close menu when clicking overlay or links
-    mobileOverlay.addEventListener('click', closeMenu);
-
-    const mobileLinks = document.querySelectorAll('.mobile-menu a');
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', closeMenu);
-    });
-
-    // ✅ Close menu when clicking the X icon
-    if (closeIcon) {
-        closeIcon.addEventListener('click', closeMenu);
+    function openMenu() {
+        mobileMenuBtn.classList.add('active');
+        mobileMenu.classList.add('active');
+        mobileOverlay.classList.add('active');
+        body.classList.add('menu-open');
     }
 
     function closeMenu() {
@@ -248,4 +234,29 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileOverlay.classList.remove('active');
         body.classList.remove('menu-open');
     }
+
+    function toggleMenu() {
+  const isOpen = mobileMenu.classList.contains('active');
+  if (isOpen) {
+    closeMenu();
+  } else {
+    openMenu();
+  }
+  // Force a reflow to ensure smooth transitions
+  void mobileMenu.offsetWidth;
+}
+
+    // Event listeners
+    mobileMenuBtn.addEventListener('click', toggleMenu);
+    if (closeIcon) closeIcon.addEventListener('click', closeMenu);
+    mobileOverlay.addEventListener('click', closeMenu);
+
+    const mobileLinks = document.querySelectorAll('.mobile-menu a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
 });
+
+
+
+
