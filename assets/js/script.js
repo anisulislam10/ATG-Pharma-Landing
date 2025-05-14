@@ -139,7 +139,6 @@ document.addEventListener('DOMContentLoaded', function() {
         aboutObserver.observe(card);
     });
 });
-// Add this to your existing script.js
 document.addEventListener('DOMContentLoaded', function() {
     // Testimonial slider functionality
     const testimonialCards = document.querySelectorAll('.testimonial-card');
@@ -215,28 +214,34 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Mobile Menu Toggle Functionality
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const mobileMenu = document.querySelector('.mobile-menu');
     const mobileOverlay = document.querySelector('.mobile-menu-overlay');
+    const closeIcon = document.querySelector('.close-icon'); // Add this
     const body = document.body;
-    
+
+    // Toggle menu open/close
     mobileMenuBtn.addEventListener('click', function() {
         this.classList.toggle('active');
         mobileMenu.classList.toggle('active');
         mobileOverlay.classList.toggle('active');
         body.classList.toggle('menu-open');
     });
-    
+
     // Close menu when clicking overlay or links
     mobileOverlay.addEventListener('click', closeMenu);
-    
+
     const mobileLinks = document.querySelectorAll('.mobile-menu a');
     mobileLinks.forEach(link => {
         link.addEventListener('click', closeMenu);
     });
-    
+
+    // ✅ Close menu when clicking the X icon
+    if (closeIcon) {
+        closeIcon.addEventListener('click', closeMenu);
+    }
+
     function closeMenu() {
         mobileMenuBtn.classList.remove('active');
         mobileMenu.classList.remove('active');

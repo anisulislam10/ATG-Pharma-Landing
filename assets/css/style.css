@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: 'Graphik-Medium';
-    src: url('/assets/Fonts/Graphik-Medium.eot') format('opentype');
+    src: url('/assets/Fonts/Graphik-Medium.eot') ;
     font-weight: 500;
     font-style: normal;
 }
@@ -177,10 +177,10 @@ ul {
 
 @media (max-width: 576px) {
     .logo {
-        height: 40px;
+        height: 70px;
     }
     .logo-img {
-        max-width: 1px;
+        max-width: 70px;
     }
 }
 
@@ -230,14 +230,14 @@ ul {
     
 }
 
-.mobile-menu-btn {
+/* .mobile-menu-btn {
     display: none;
     background: none;
     border: none;
     cursor: pointer;
     padding: 10px;
     z-index: 1001;
-}
+} */
 
 .mobile-menu-btn span {
     display: block;
@@ -783,11 +783,9 @@ ul {
 /* Mobile Menu Styles */
 /* Mobile Menu Styles */
 .mobile-menu-btn {
-    display: none; /* Hidden by default on desktop */
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
+    position: relative;
+    width: 40px;
+    height: 40px;
     z-index: 1001;
 }
 
@@ -898,7 +896,9 @@ ul {
     }
     
     .btn-contact {
-        display: inline-block; /* Ensure contact button appears in mobile menu */
+        display: inline-block; 
+        background-color: white;
+        color: black;
     }
 }
 /* Tablet and Mobile Responsive Styles */
@@ -922,6 +922,12 @@ ul {
     body.menu-open {
         overflow: hidden;
     }
+     .btn-contact {
+        display: inline-block; 
+        background-color: white;
+        color: black;
+    }
+    
 }
 
 /* Additional Mobile Optimizations */
@@ -935,6 +941,131 @@ ul {
         font-size: 1rem;
     }
 }
+
+
+/* Mobile Menu Button Styles */
+.mobile-menu-btn {
+    display: none; /* Hidden by default on desktop */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+/* Burger lines */
+.burger-line {
+    position: absolute;
+    left: 7px;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color, #000); /* Fallback to black */
+    transition: all 0.3s ease;
+}
+
+.burger-line-1 { top: 10px; }
+.burger-line-2 { top: 18px; }
+.burger-line-3 { top: 26px; }
+
+/* Close icon */
+.close-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color); /* or just 'black' if no custom variable */
+    transition: all 0.3s ease;
+    opacity: 0;
+    pointer-events: none; /* Prevent click unless visible */
+    z-index: 10; /* Ensure it appears above burger lines */
+}
+/* Active States */
+.mobile-menu-btn.active .burger-line {
+       opacity: 0;
+
+}
+
+.mobile-menu-btn.active .close-icon {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Mobile Menu Panel */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: var(black, #fff); 
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding: 100px 30px 30px;
+}
+
+/* Overlay */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Active States */
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Responsive - Tablet & Mobile */
+@media (max-width: 992px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    body.menu-open {
+        overflow: hidden;
+    }
+}
+
+/* Extra Mobile Optimization */
+@media (max-width: 576px) {
+    .mobile-menu {
+        width: 85%;
+        padding: 90px 20px 20px;
+    }
+
+    .mobile-menu a {
+        font-size: 1rem;
+    }
+
+    .btn-contact {
+        display: inline-block;
+    }
+}
+
 /* About Section - Modern Animated Version */
 .about {
     position: relative;
@@ -1100,6 +1231,9 @@ ul {
     z-index: 2;
     box-shadow: 0 5px 15px rgba(2, 113, 227, 0.3);
 }
+
+
+
 
 .timeline-content {
     background: white;
