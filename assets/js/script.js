@@ -97,10 +97,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     window.addEventListener('scroll', animateOnScroll);
-    animateOnScroll(); // Run once on page load
+    animateOnScroll(); 
 });
 
-// Add this to your existing script.js
 document.addEventListener('DOMContentLoaded', function() {
     // Animate stats counting for about section
     const aboutStats = document.querySelectorAll('.about .stat-number');
@@ -179,14 +178,11 @@ document.addEventListener('DOMContentLoaded', function() {
         dot.addEventListener('click', () => showTestimonial(index));
     });
     
-    // Button events
     nextBtn.addEventListener('click', nextTestimonial);
     prevBtn.addEventListener('click', prevTestimonial);
     
-    // Auto-rotate testimonials
     let testimonialInterval = setInterval(nextTestimonial, 6000);
     
-    // Pause on hover
     const slider = document.querySelector('.testimonial-slider');
     slider.addEventListener('mouseenter', () => clearInterval(testimonialInterval));
     slider.addEventListener('mouseleave', () => {
@@ -201,14 +197,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const question = item.querySelector('.faq-question');
         
         question.addEventListener('click', () => {
-            // Close all other items
             faqItems.forEach(otherItem => {
                 if (otherItem !== item && otherItem.classList.contains('active')) {
                     otherItem.classList.remove('active');
                 }
             });
             
-            // Toggle current item
             item.classList.toggle('active');
         });
     });
@@ -242,11 +236,9 @@ document.addEventListener('DOMContentLoaded', function () {
   } else {
     openMenu();
   }
-  // Force a reflow to ensure smooth transitions
   void mobileMenu.offsetWidth;
 }
 
-    // Event listeners
     mobileMenuBtn.addEventListener('click', toggleMenu);
     if (closeIcon) closeIcon.addEventListener('click', closeMenu);
     mobileOverlay.addEventListener('click', closeMenu);

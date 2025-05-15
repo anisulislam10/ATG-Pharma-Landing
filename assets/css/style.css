@@ -3136,7 +3136,7 @@ ul {
 .mobile-menu-header {
     display: flex;
     justify-content: flex-end;
-    padding: 20px;
+    padding: 15px;
     position: sticky;
     top: 0;
     background: var(blue);
@@ -3144,14 +3144,14 @@ ul {
 }
 
 .mobile-close-btn {
-    background: none;
     border: none;
     font-size: 2rem;
-    color: var(--primary-color);
     cursor: pointer;
     padding: 5px;
     line-height: 1;
     transition: transform 0.2s ease;
+    border-radius: 10px;
+
 }
 
 .mobile-close-btn:hover {
@@ -3178,4 +3178,6 @@ ul {
     z-index: 1000;
     display: flex;
     flex-direction: column;
+    padding-top: 1px;
+    
 }
