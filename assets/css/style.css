@@ -3180,5 +3180,6 @@ ul {
     display: flex;
     flex-direction: column;
     padding-top: 1px;
+    border-radius: 15px;
     
 }
