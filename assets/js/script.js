@@ -250,9 +250,5 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-<script>
-  document.getElementById("contactForm").addEventListener("submit", function(e) {
-    alert("Thank you! Your message has been sent.")
-  });
-</script>
+
 
