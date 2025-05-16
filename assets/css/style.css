@@ -198,8 +198,8 @@ ul {
     /* font-weight: 500; */
     transition: color 0.3s ease;
     position: relative;
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 13px;
+
     letter-spacing: -.05em;
 }
 
