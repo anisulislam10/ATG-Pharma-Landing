@@ -3183,3 +3183,298 @@ ul {
     border-radius: 15px;
     
 }
+
+
+
+
+/* Contact Section */
+.contact-section {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+    background-color: #f8fafc;
+}
+
+.contact-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.contact-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1a365d;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-title .title-line {
+    display: block;
+}
+
+.contact-title .highlight-word {
+    color: #015BB9;
+    position: relative;
+}
+
+.contact-title .highlight-word::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: rgba(1, 91, 185, 0.2);
+    z-index: -1;
+}
+
+.contact-text {
+    font-size: 1.25rem;
+    color: #4a5568;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.contact-form {
+    display: grid;
+    gap: 30px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px 0 10px;
+    border: none;
+    border-bottom: 1px solid #cbd5e0;
+    background-color: transparent;
+    font-size: 1rem;
+    color: #1a365d;
+    transition: all 0.3s ease;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-group label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    color: #718096;
+    font-size: 1rem;
+    font-weight: 500;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-bottom-color: #015BB9;
+}
+
+.form-group input:focus + label,
+.form-group textarea:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:not(:placeholder-shown) + label {
+    top: -5px;
+    font-size: 0.85rem;
+    color: #015BB9;
+}
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #015BB9;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus ~ .underline,
+.form-group textarea:focus ~ .underline {
+    width: 100%;
+}
+
+.contact-info {
+    display: grid;
+    gap: 30px;
+}
+
+.info-item {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(1, 91, 185, 0.1);
+}
+
+.info-item svg {
+    flex-shrink: 0;
+    color: #015BB9;
+}
+
+.info-item h3 {
+    font-size: 1.1rem;
+    color: #1a365d;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.contact-image {
+    position: relative;
+    height: 500px;
+    margin-top: 60px;
+}
+
+.contact-image .image-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.floating-shapes .shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(1, 91, 185, 0.1);
+}
+
+.floating-shapes .shape-1 {
+    width: 120px;
+    height: 120px;
+    top: -30px;
+    right: -30px;
+}
+
+.floating-shapes .shape-2 {
+    width: 80px;
+    height: 80px;
+    bottom: 40px;
+    left: -20px;
+}
+
+.floating-shapes .shape-3 {
+    width: 60px;
+    height: 60px;
+    bottom: -20px;
+    right: 20%;
+}
+
+.contact-background .bg-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(1, 91, 185, 0.05);
+}
+
+.contact-background .bg-circle-1 {
+    width: 600px;
+    height: 600px;
+    top: -300px;
+    right: -300px;
+}
+
+.contact-background .bg-circle-2 {
+    width: 400px;
+    height: 400px;
+    bottom: -200px;
+    left: -200px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .contact-info {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 60px 0;
+    }
+    
+    .contact-title {
+        font-size: 2.2rem;
+    }
+    
+    .contact-text {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+    
+    .contact-image {
+        height: 400px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 1.8rem;
+    }
+    
+    .contact-text {
+        font-size: 1rem;
+    }
+    
+    .info-item {
+        padding: 20px;
+    }
+    
+    .contact-image {
+        height: 300px;
+    }
+}
