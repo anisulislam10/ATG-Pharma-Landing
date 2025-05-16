@@ -25,8 +25,8 @@
         <nav class="nav">
             <ul class="desktop-menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Products</a></li>
+                <li><a href="#products">Products</a></li>         
+                <li><a href="#about">Our Story</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li ><a href="#faq">FAQ's</li>
                 <li><a href="#contact" class="btn-contact">Contact</a></li>
@@ -48,8 +48,9 @@
      <div class="mobile-menu-header">
     <a href="#" class="mobile-close-btn">✕</a></div>
     <a href="#home">Home</a>
-    <a href="#about">About</a>
     <a href="#products">Products</a>
+        <a href="#about">Our Story</a>
+
     <a href="#testimonials">Testimonials</a>
     <a href="#faq">FAQ's</a>
     <a href="#contact" class="btn-contact">Contact</a>
@@ -88,18 +89,72 @@
                 <span>Scroll to explore</span>
             </div>
         </div>
-        <div class="hero-image">
-            <div class="image-container">
-                <img src="assets/images/heroSection/heroimg.webp" alt="Pharmaceutical automation equipment" loading="lazy">
-                <div class="gradient-overlay"></div>
-            </div>
+        <div class="hero-contact-form">
+            <form class="compact-contact-form" >
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">EMAIL ADDRESS</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="company">COMPANY NAME</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>2. What product(s) do you work with?</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-row">
+                            <label><input type="checkbox" name="products" value="balms"> BALMS</label>
+                            <label><input type="checkbox" name="products" value="bottles"> BOTTLES</label>
+                            <label><input type="checkbox" name="products" value="capsules"> CAPSULES</label>
+                        </div>
+                        <div class="checkbox-row">
+                            <label><input type="checkbox" name="products" value="cartridges"> CARTRIDGES</label>
+                            <label><input type="checkbox" name="products" value="creams"> CREAMS</label>
+                            <label><input type="checkbox" name="products" value="gummies"> GUMMIES</label>
+                        </div>
+                        <div class="checkbox-row">
+                            <label><input type="checkbox" name="products" value="other"> OTHER</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="help">3. How can ATG help you?</label>
+                    <textarea id="help" name="help" rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="hearAbout">4. How did you hear about ATG?</label>
+                    <select id="hearAbout" name="hearAbout">
+                        <option value="">SELECT</option>
+                        <option value="search">Search Engine</option>
+                        <option value="referral">Referral</option>
+                        <option value="trade-show">Trade Show</option>
+                        <option value="social-media">Social Media</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit">SUBMIT</button>
+            </form>
             <div class="floating-shapes">
                 <div class="shape shape-1"></div>
                 <div class="shape shape-2"></div>
                 <div class="shape shape-3"></div>
                 <div class="shape shape-4"></div>
-            </div>
-            
             </div>
         </div>
     </div>
@@ -109,6 +164,117 @@
     </div>
 </section>
 
+
+
+       <section id="products" class="products">
+    <div class="container">
+        <h2 class="section-title">
+            <span class="title-line">Our <span class="highlight-word">Solutions</span></span>
+        </h2>
+        <p class="section-subtitle">Precision automation for pharmaceutical manufacturing</p>
+        
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card animated-item">
+                <div class="product-badge">Innovation</div>
+                <div class="product-image">
+                    <img src="assets/images/heroSection/3-.png" alt="RoboCAP filling system" loading="lazy">
+                    <div class="product-bubble bubble-1"></div>
+                    <div class="product-bubble bubble-2"></div>
+                </div>
+                <div class="product-content">
+                    <h3>RoboCAP</h3>
+                    <p>Automated capsule filling system with precision dosing technology for pharmaceutical applications.</p>
+                    
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card animated-item">
+                <div class="product-badge">Compact</div>
+                <div class="product-image">
+                    <img src="assets/images/heroSection/atg-a10.webp" alt="AC10 Mini Candy Depositor" loading="lazy">
+                    <div class="product-bubble bubble-3"></div>
+                    <div class="product-bubble bubble-4"></div>
+                </div>
+                <div class="product-content">
+                    <h3>AC10 Mini Candy Depositor</h3>
+                    <p>Compact depositing solution for small-batch production of medicated candies and gummies.</p>
+                    
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card animated-item">
+                <div class="product-badge">Efficient</div>
+                <div class="product-image">
+                    <img src="assets/images/heroSection/2.webp" alt="A1 Cart Filler" loading="lazy">
+                    <div class="product-bubble bubble-5"></div>
+                    <div class="product-bubble bubble-6"></div>
+                </div>
+                <div class="product-content">
+                    <h3>A1 Cart Filler</h3>
+                    <p>High-speed vape cartridge filling system with multi-nozzle precision technology.</p>
+                    
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card animated-item">
+                <div class="product-badge">Versatile</div>
+                <div class="product-image">
+                    <img src="assets/images/heroSection/4.webp" alt="MonoPress" loading="lazy">
+                    <div class="product-bubble bubble-7"></div>
+                    <div class="product-bubble bubble-8"></div>
+                </div>
+                <div class="product-content">
+                    <h3>MonoPress</h3>
+                    <p>Single-punch tablet press ideal for R&D and small-scale production batches.</p>
+                    
+                </div>
+            </div>
+
+             <!-- Product 5 -->
+            <div class="product-card animated-item">
+                <div class="product-badge">Versatile</div>
+                <div class="product-image">
+                    <img src="assets/images/heroSection/Semi-AutomaticFilling-System-1-.png" alt="MonoPress" loading="lazy">
+                    <div class="product-bubble bubble-7"></div>
+                    <div class="product-bubble bubble-8"></div>
+                </div>
+                <div class="product-content">
+                    <h3>Semi-Automatic Filling System</h3>
+                    <p>Our Semi-Automatic filler lineup is specifically engineered to handle bottle, capsule, and cartridge filling.</p>
+                    
+                </div>
+            </div>
+
+             <!-- Product 6 -->
+            <div class="product-card animated-item">
+                <div class="product-badge">Versatile</div>
+                <div class="product-image">
+                    <img src="assets/images/heroSection/aaa-.png" alt="MonoPress" loading="lazy">
+                    <div class="product-bubble bubble-7"></div>
+                    <div class="product-bubble bubble-8"></div>
+                </div>
+                <div class="product-content">
+                    <h3>Automated Packaging Systems</h3>
+                    <p>Post-fill packaging solutions: Cartridge Press, Capsule Counter, and Labeler.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Floating background bubbles -->
+    <div class="floating-bubbles">
+        <div class="bubble b-1"></div>
+        <div class="bubble b-2"></div>
+        <div class="bubble b-3"></div>
+        <div class="bubble b-4"></div>
+        <div class="bubble b-5"></div>
+    </div>
+</section>
        <section id="about" class="about">
     <div class="container">
         <div class="about-image">
@@ -169,123 +335,6 @@
         <div class="bg-element triangle"></div>
     </div>
 </section>
-
-
-
-
-
-
-
-       <section id="products" class="products">
-    <div class="container">
-        <h2 class="section-title">
-            <span class="title-line">Our <span class="highlight-word">Solutions</span></span>
-        </h2>
-        <p class="section-subtitle">Precision automation for pharmaceutical manufacturing</p>
-        
-        <div class="product-grid">
-            <!-- Product 1 -->
-            <div class="product-card animated-item">
-                <div class="product-badge">Innovation</div>
-                <div class="product-image">
-                    <img src="assets/images/heroSection/3.webp" alt="RoboCAP filling system" loading="lazy">
-                    <div class="product-bubble bubble-1"></div>
-                    <div class="product-bubble bubble-2"></div>
-                </div>
-                <div class="product-content">
-                    <h3>RoboCAP</h3>
-                    <p>Automated capsule filling system with precision dosing technology for pharmaceutical applications.</p>
-                    
-                </div>
-            </div>
-            
-            <!-- Product 2 -->
-            <div class="product-card animated-item">
-                <div class="product-badge">Compact</div>
-                <div class="product-image">
-                    <img src="assets/images/heroSection/atg-a10.webp" alt="AC10 Mini Candy Depositor" loading="lazy">
-                    <div class="product-bubble bubble-3"></div>
-                    <div class="product-bubble bubble-4"></div>
-                </div>
-                <div class="product-content">
-                    <h3>AC10 Mini Candy Depositor</h3>
-                    <p>Compact depositing solution for small-batch production of medicated candies and gummies.</p>
-                    
-                </div>
-            </div>
-            
-            <!-- Product 3 -->
-            <div class="product-card animated-item">
-                <div class="product-badge">Efficient</div>
-                <div class="product-image">
-                    <img src="assets/images/heroSection/2.webp" alt="A1 Cart Filler" loading="lazy">
-                    <div class="product-bubble bubble-5"></div>
-                    <div class="product-bubble bubble-6"></div>
-                </div>
-                <div class="product-content">
-                    <h3>A1 Cart Filler</h3>
-                    <p>High-speed vape cartridge filling system with multi-nozzle precision technology.</p>
-                    
-                </div>
-            </div>
-            
-            <!-- Product 4 -->
-            <div class="product-card animated-item">
-                <div class="product-badge">Versatile</div>
-                <div class="product-image">
-                    <img src="assets/images/heroSection/4.webp" alt="MonoPress" loading="lazy">
-                    <div class="product-bubble bubble-7"></div>
-                    <div class="product-bubble bubble-8"></div>
-                </div>
-                <div class="product-content">
-                    <h3>MonoPress</h3>
-                    <p>Single-punch tablet press ideal for R&D and small-scale production batches.</p>
-                    
-                </div>
-            </div>
-
-             <!-- Product 5 -->
-            <div class="product-card animated-item">
-                <div class="product-badge">Versatile</div>
-                <div class="product-image">
-                    <img src="assets/images/heroSection/Semi-AutomaticFilling-System-1.webp" alt="MonoPress" loading="lazy">
-                    <div class="product-bubble bubble-7"></div>
-                    <div class="product-bubble bubble-8"></div>
-                </div>
-                <div class="product-content">
-                    <h3>Semi-Automatic Filling System</h3>
-                    <p>Our Semi-Automatic filler lineup is specifically engineered to handle bottle, capsule, and cartridge filling.</p>
-                    
-                </div>
-            </div>
-
-             <!-- Product 6 -->
-            <div class="product-card animated-item">
-                <div class="product-badge">Versatile</div>
-                <div class="product-image">
-                    <img src="assets/images/heroSection/aaa.webp" alt="MonoPress" loading="lazy">
-                    <div class="product-bubble bubble-7"></div>
-                    <div class="product-bubble bubble-8"></div>
-                </div>
-                <div class="product-content">
-                    <h3>Automated Packaging Systems</h3>
-                    <p>Post-fill packaging solutions: Cartridge Press, Capsule Counter, and Labeler.</p>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Floating background bubbles -->
-    <div class="floating-bubbles">
-        <div class="bubble b-1"></div>
-        <div class="bubble b-2"></div>
-        <div class="bubble b-3"></div>
-        <div class="bubble b-4"></div>
-        <div class="bubble b-5"></div>
-    </div>
-</section>
-
         <section id="testimonials" class="testimonials">
     <div class="container">
         <h2 class="section-title">
