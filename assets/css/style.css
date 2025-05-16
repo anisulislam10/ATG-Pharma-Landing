@@ -36,7 +36,7 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
 img {
@@ -1512,7 +1512,7 @@ font-size: 18px;
 /* Products Section - Modern Animated Version */
 .products {
     position: relative;
-    padding: 0 0;
+    padding: 10px 0;
     background-color: #f8fafc;
     overflow: hidden;
 }
