@@ -28,7 +28,7 @@
 body {
     font-family: var(--font-main);
     color: var(--text-color);
-    line-height: 1.2;
+    line-height: 1.1;
     overflow-x: hidden;
 }
 
@@ -132,7 +132,7 @@ ul {
 /* Logo Styles */
 .logo {
     display: inline-flex;
-    align-items: center;
+    align-items: start;
     height: 40px; /* Fixed height for all screens */
     text-decoration: none;
 }
@@ -162,6 +162,8 @@ ul {
 @media (max-width: 992px) {
     .logo {
         height: 50px;
+         display: inline-flex;
+    align-items: start;
     }
     .logo-img {
         max-width: 150px;
@@ -353,7 +355,11 @@ ul {
     animation-delay: 0.4s;
     font-size: 16px;
     /* background-color: red; */
-    font-weight: 600px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-weight: 400;
+    
 }
 
 .hero-buttons {
