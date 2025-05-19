@@ -1064,7 +1064,7 @@ ul {
 /* About Section - Modern Animated Version */
 .about {
     position: relative;
-    padding: 60px 0;
+    padding: 50px 0;
     overflow: hidden;
     background-color: #f8fafc;
 }
@@ -1160,6 +1160,7 @@ ul {
     color: var(--primary-color);
     position: relative;
     display: inline-block;
+    
 }
 
 .highlight-word::after {
@@ -1180,6 +1181,7 @@ ul {
 .history-timeline {
     position: relative;
     margin-bottom: 40px;
+    
 }
 
 .history-timeline::before {
@@ -1191,6 +1193,7 @@ ul {
     width: 3px;
     background-color: rgba(2, 113, 227, 0.1);
     z-index: 1;
+    
 }
 
 .timeline-item {
@@ -1198,6 +1201,7 @@ ul {
     padding-left: 80px;
     margin-bottom: 30px;
     opacity: 0;
+
     transform: translateY(20px);
     animation: fadeInUp 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
 }
@@ -1222,8 +1226,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-weight: 500;
+    font-size: 15px;
     z-index: 2;
     box-shadow: 0 5px 15px rgba(2, 113, 227, 0.3);
 }
@@ -1237,10 +1241,11 @@ ul {
     border-radius: 15px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
     position: relative;
+    
 }
 
 .timeline-content h3 {
-    font-size: 1.3rem;
+    font-size: 16px;
     margin-bottom: 10px;
     color: var(--primary-color);
 }
@@ -1248,7 +1253,7 @@ ul {
 .timeline-content p {
     color: var(--text-light);
     line-height: 1.2;
-font-size: 18px;
+font-size: 14px;
 
 }
 
@@ -1723,6 +1728,7 @@ font-size: 18px;
 
 .product-content {
     padding: 25px;
+    
 }
 
 .product-content h3 {
@@ -1731,13 +1737,18 @@ font-size: 18px;
     color: var(--text-color);
     font-family: var(--font-graphik);
     font-size: 35px;
+    
 }
+
 
 .product-content p {
     color: var(--text-light);
-    margin-bottom: 15px;
-    line-height: 1.2;
-    font-weight: 400px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-family: var(--font-graphik);
+    font-size: 14px;
+
+  
 }
 
 .product-specs {
@@ -1917,7 +1928,7 @@ font-size: 18px;
     }
     
     .section-subtitle {
-        font-size: 1rem;
+        font-size: 15px;
     }
     
     .product-image {
@@ -2013,7 +2024,7 @@ font-size: 18px;
 .quote-icon {
     position: absolute;
     top: -15px;
-    left: -15px;
+    left: -30px;
     opacity: 0.15;
     z-index: 0;
 }
@@ -2362,7 +2373,7 @@ font-size: 18px;
     transform: translateY(20px);
     animation: fadeInUp 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
     animation-delay: 0.2s;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500px;
 }
 
@@ -3133,7 +3144,7 @@ font-size: 18px;
     }
     
     .section-subtitle {
-        font-size: 1rem;
+        font-size: 15px;
     }
 }
 
