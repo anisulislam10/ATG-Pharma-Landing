@@ -3244,12 +3244,16 @@ font-size: 18px;
     background: white;
     padding: 30px;
     border-radius: 16px;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 12px 40px rgba(120, 141, 236, 0.342);
     border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .form-group {
     margin-bottom: 20px;
+
+}
+.textarea {
+  min-height: 7px;
 }
 
 .form-row {
@@ -3307,7 +3311,7 @@ font-size: 18px;
 .checkbox-row label {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 2px;
     font-weight: 300;
     text-transform: none;
     cursor: pointer;
@@ -3328,7 +3332,7 @@ font-size: 18px;
 }
 
 textarea {
-    min-height: 90px;
+    min-height: 60px;
     resize: vertical;
 }
 
@@ -3348,7 +3352,7 @@ select {
     border: none;
     border-radius: 8px;
     font-size: 15px;
-    font-weight: 800;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     margin-top: 6px;
