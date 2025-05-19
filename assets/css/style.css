@@ -388,6 +388,7 @@ ul {
     background-color: var(--primary-color);
     color: white;
     border: 2px solid var(--primary-color);
+    font-family: var(--font-graphik);
 }
 
 .btn-primary svg {
@@ -424,6 +425,7 @@ ul {
     opacity: 0;
     animation: fadeIn 1s ease forwards;
     animation-delay: 1s;
+    font-family: var(--font-graphik);
 }
 
 .scroll-animation {
@@ -432,6 +434,7 @@ ul {
     border: 2px solid var(--primary-color);
     border-radius: 15px;
     position: relative;
+    font-family: var(--font-graphik);
 }
 
 .scroll-animation::before {
