@@ -733,6 +733,7 @@ ul {
         text-align: left;
         gap: 60px;
     }
+   
     
     .hero-content {
         text-align: left;
@@ -929,9 +930,12 @@ ul {
     
     /* Adjust header padding */
     .header {
-        padding: 10px 0;
+        padding: 0 0;
+       
     }
-    
+.hero-title{
+    margin-top: 20px;
+}    
     /* Prevent body scrolling when menu is open */
     body.menu-open {
         overflow: hidden;
@@ -954,6 +958,10 @@ ul {
     .mobile-nav a {
         font-size: 1rem;
     }
+    .hero-title{
+        margin-top: 47px;
+    }
+
 }
 
 /*  */
