@@ -210,11 +210,10 @@ ul {
 .nav ul li a::after {
     content: '';
     position: absolute;
-    top: 15px;
+    top: 45px;
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--primary-color);
     transition: width 0.3s ease;
 }
 
@@ -229,12 +228,15 @@ ul {
     border-radius: 30px;
     font-weight: 500;
     transition: all 0.3s ease;
+    border: 1px solid #000000; /* Added proper border declaration */
    
 }
 
 .btn-contact:hover {
     background-color: white;
-    transform: translateY(-2px);
+    border: 1px solid #0055aa; /* Added proper border declaration */
+    border-radius: 30px; /* Added 'px' unit */
+    color: #0055aa; 
     
 }
 
