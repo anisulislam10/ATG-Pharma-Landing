@@ -2751,7 +2751,7 @@ font-size: 14px;
 }
 
 .footer-about p {
-    color: #aaa;
+    color: #000000;
     margin: 20px 0;
     line-height: 2;
     font-size: 14px;
@@ -2786,10 +2786,10 @@ font-size: 14px;
 
 .footer-links h3,
 .footer-contact h3 {
-    font-size: 1.3rem;
+    font-size: 14px;
     margin-bottom: 20px;
     font-family: var(--font-graphik);
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .footer-links ul {
@@ -2799,8 +2799,7 @@ font-size: 14px;
 }
 
 .footer-links li a {
-    color: #aaa;
-    transition: color 0.3s ease;
+    color: #000000;
     position: relative;
     padding-left: 15px;
 }
@@ -2820,7 +2819,7 @@ font-size: 14px;
 }
 
 .footer-links li a:hover {
-    color: rgb(158, 165, 226);
+    color: rgb(2, 2, 7);
     padding-left: 20px;
 }
 
@@ -2838,7 +2837,7 @@ font-size: 14px;
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    color: #aaa;
+    color: #0e0303;
 }
 
 .footer-contact li svg {
@@ -2848,7 +2847,7 @@ font-size: 14px;
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(12, 1, 1, 0.1);
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -2858,7 +2857,7 @@ font-size: 14px;
 }
 
 .footer-bottom p {
-    color: #777;
+    color: #140505;
     font-size: 0.9rem;
 }
 
