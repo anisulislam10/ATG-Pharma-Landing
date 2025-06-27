@@ -225,18 +225,18 @@ ul {
     background-color: var(--primary-color);
     color: var(--white);
     padding: 10px 20px;
-    border-radius: 30px;
     font-weight: 500;
     transition: all 0.3s ease;
-    border: 1px solid #000000; /* Added proper border declaration */
+        border-radius: 15px; /* Added 'px' unit */
+
    
 }
 
 .btn-contact:hover {
     background-color: white;
-    border: 1px solid #0055aa; /* Added proper border declaration */
-    border-radius: 30px; /* Added 'px' unit */
-    color: #0055aa; 
+    border: 2px solid var(--primary-color); /* Added proper border declaration */
+    border-radius: 15px; /* Added 'px' unit */
+
     
 }
 
