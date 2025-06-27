@@ -7,14 +7,14 @@
     --bg-light: #f9f9f9;
     --white: #ffffff;
     --gray: #e0e0e0;
-    --font-main: 'Graphik-Medium', medium;
-    --font-graphik: 'Graphik-Medium', medium;
+    --font-main: 'Graphik-Medium' ;
+    --font-graphik: 'Graphik-Medium';
 }
 
 @font-face {
     font-family: 'Graphik-Medium';
-    src: url('/assets/Fonts/Graphik-Medium.ttf') ;
-    font-weight: 100;
+    src: url('/assets/Fonts/graphik-10.ttf') ;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -225,9 +225,14 @@ ul {
     background-color: var(--primary-color);
     color: var(--white);
     padding: 10px 20px;
+    font-size: 15.4px;
     font-weight: 500;
-    transition: all 0.3s ease;
-        border-radius: 15px; /* Added 'px' unit */
+    font-style: normal;
+    border-style: solid;
+    border-radius: 20px; 
+    border: 2px solid var(--primary-color); /* Added proper border declaration */
+
+
 
    
 }
@@ -235,7 +240,7 @@ ul {
 .btn-contact:hover {
     background-color: white;
     border: 2px solid var(--primary-color); /* Added proper border declaration */
-    border-radius: 15px; /* Added 'px' unit */
+    padding: 10px 20px;
 
     
 }
@@ -266,10 +271,10 @@ ul {
     overflow: hidden;
     background-color: #f8fafc; /* fallback */
     background-image: 
-        linear-gradient(rgba(114, 174, 233, 0.8), rgba(184, 208, 253, 0.671)), 
-        url('/assets/images/heroSection/2.png');
+        linear-gradient(rgba(114, 174, 233, 0.9), rgba(202, 200, 200, 0.8)), 
+        url('/assets/images/Hero-Image-optimized.png');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
 }
 
@@ -371,7 +376,7 @@ ul {
     margin-inline-end: 0px;
     unicode-bidi: isolate;
     font-weight: 100;
-    line-height: 29px;
+    line-height: auto;
     
 }
 
@@ -428,9 +433,7 @@ ul {
     color: white;
     box-shadow: 0 10px 20px rgba(2, 113, 227, 0.2);
 }
-.btn-contact-us{
 
-}
 .hero-scroll {
     display: flex;
     align-items: center;
