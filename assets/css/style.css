@@ -117,11 +117,6 @@ ul {
     transition: all 0.3s ease;
 }
 
-.header.scrolled {
-    padding: 10px 0;
-    background-color: rgba(255, 255, 255, 0.95);
-}
-
 .header .container {
     display: flex;
     justify-content: space-between;
@@ -184,7 +179,7 @@ ul {
         height: 70px;
     }
     .logo-img {
-        max-width: 70px;
+        max-width: 130px;
     }
 }
 
@@ -200,7 +195,6 @@ ul {
     position: relative;
     font-size: 16px;
 
-    letter-spacing: -.05em;
 }
 
 .nav ul li a:hover {
@@ -778,20 +772,37 @@ ul {
     .hero {
         padding: 120px 0 60px;
         margin-top: 40px;
+        text-align: center; /* Centers inline/text elements */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers child blocks horizontally */
     }
     
     .hero-buttons {
         flex-direction: column;
         width: 100%;
+        text-align: center; /* Centers button text */
+        display: flex;
+        gap: 10px; /* Adds spacing between stacked buttons */
     }
     
     .btn-primary, .btn-secondary {
         width: 100%;
+        text-align: center;
+                align-items: center; /* Centers child blocks horizontally */
+        display: flex;
+padding-left: 100px;
+
     }
     
     .hero-scroll {
         margin-top: 30px;
     }
+    .hero-text{
+        display: none;
+    }
+  
+   
 }
 
 /* Background elements adjustments */
@@ -959,9 +970,10 @@ ul {
         overflow: hidden;
     }
      .btn-contact {
-        display: inline-block; 
         background-color: white;
         color: black;
+        border: none;
+
     }
     
 }
@@ -977,7 +989,15 @@ ul {
         font-size: 1rem;
     }
     .hero-title{
-        margin-top: 47px;
+         margin-top: 4px;
+        font-size: small;
+        /* background-color: #0066cc; */
+        text-align: center; /* Center the text */
+        display: flex; /* If you want to center content vertically too */
+        flex-direction: column;
+        justify-content: center; /* Centers vertically */
+        align-items: center; /* Centers horizontally */
+
     }
 
 }
@@ -2969,27 +2989,57 @@ font-size: 14px;
     }
 }
 
-/* Responsive Adjustments */
+/* Responsive Footer Adjustments */
 @media (max-width: 768px) {
     .footer-content {
+        display: grid;
         grid-template-columns: 1fr;
         gap: 30px;
+        text-align: center;
+        justify-items: center; /* Centers grid children horizontally */
+        align-items: center;   /* Centers grid children vertically */
+        width: 100%;
     }
-    
-    .footer-about {
-        max-width: 100%;
+
+    .footer-about,
+    .footer-links,
+    .footer-contact {
+        width: 100%;
+        max-width: 400px; /* Optimal reading width */
+        text-align: center;
+        margin: 0 auto; /* Double centering for older browsers */
+        padding: 0 15px; /* Prevents edge touching */
     }
-    
+
+    .footer-about p {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .footer-bottom {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
+        gap: 15px;
     }
-    
+
     .footer-legal {
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+    }
+
+    .footer-links ul,
+    .social-links {
+        justify-content: center;
+        padding-left: 0; /* Remove default padding */
+    }
+
+    .footer-links li {
+        display: inline-block; /* For better centering */
+        margin: 0 10px 10px 0; /* Spacing between items */
     }
 }
-
 @media (max-width: 480px) {
     .footer {
         padding: 60px 0 20px;
