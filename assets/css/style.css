@@ -266,7 +266,7 @@ ul {
     background-color: #f8fafc; /* fallback */
     background-image: 
         linear-gradient(rgba(114, 174, 233, 0.9), rgba(202, 200, 200, 0.8)), 
-        url('/assets/images/Hero-Image-optimized.png');
+        url('/assets/images/Hero-Image-optimized.webp');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
